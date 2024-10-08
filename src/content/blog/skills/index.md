@@ -51,5 +51,5 @@ pinned: true
 ---
 
 This is a living document, and I’m always exploring new technologies to
-improve my workflow and stay up to date with the industry. Would be cool
-to try Go for the backend.
+improve my workflow and stay up to date with the industry. 
+> Would be cool to try Go for the backend.
