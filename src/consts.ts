@@ -10,7 +10,7 @@ export const SITE: Site = {
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION: "Personal portfolio of a Bobomurod based in Uzbekistan, Tashkent",
+  DESCRIPTION: "Personal portfolio of Bobomurod based in Uzbekistan, Tashkent",
 };
 
 export const BLOG: Metadata = {
