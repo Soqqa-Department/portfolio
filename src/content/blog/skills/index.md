@@ -1,6 +1,6 @@
 ---
 title: "Skills and technologies"
-description: "Explore my full tech stack"
+description: "Explore my full tech stack 🔬"
 date: "Oct 08 2024"
 pinned: true
 ---
