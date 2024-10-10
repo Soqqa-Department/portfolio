@@ -29,6 +29,7 @@ pinned: true
 - **Bundling**: Vite
 - **Testing**: Vitest, Jest
 - **Backend**: [Deno](https://deno.com/), [Actix](https://actix.rs/)
+- **Telegram Bot**: [Aiogram](https://aiogram.dev/)
 
 ---
 

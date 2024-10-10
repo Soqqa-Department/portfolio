@@ -6,7 +6,7 @@ import ArrowCard from "@components/ArrowCard.astro";
 import { BLOG } from "@consts";
 
 const data = (await getCollection("blog"))
-  .filter(post => !post.data.draft)
+  .filter(post => !(post.data.hide || post.data.draft))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 const pinned = data.filter(x=>x.data.pinned);
