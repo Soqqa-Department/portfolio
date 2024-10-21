@@ -19,6 +19,7 @@ const work = defineCollection({
     role: z.string(),
     dateStart: z.coerce.date(),
     dateEnd: z.union([z.coerce.date(), z.string()]),
+    draft: z.boolean().optional()
   }),
 });
 

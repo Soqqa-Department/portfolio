@@ -1,6 +1,6 @@
 ---
 title: "Fruitodoro"
-description: "The best pomodoro app for desktop built with Tauri"
+description: "Pomodoro app on steroids🍇"
 date: "Aug 15 2024"
 demoURL: "https://www.youtube.com/watch?v=Yfpj5IL1PTQ"
 repoURL: "https://github.com/mmnvb/fruitodoro"
