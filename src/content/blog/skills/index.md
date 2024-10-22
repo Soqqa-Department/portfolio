@@ -40,6 +40,7 @@ pinned: true
 - **Containerization**: Docker Compose
 - **Hosting**: VPS/VDS, AWS
 - **Logging**: ElasticSearch
+- **Message brocker**: Apache Kafka
 ---
 
 ### Other Tools
