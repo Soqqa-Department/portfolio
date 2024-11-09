@@ -1,25 +1,12 @@
 ---
 title: "Kocha Lang"
 description: "My interpreted programming language💙"
-date: "Aug 15 2024"
-# demoURL: ""
-repoURL: "https://github.com/mmnvb/kocha"
+date: "Sep 8 2024"
+demoURL: "https://kocha-lang.uz/"
+repoURL: "https://github.com/kocha-lang/kocha"
 ---
 
-⚙️I will anounce that shit soon. 
-I have `for` and `while` loops left to implement
+## Check [website](https://kocha-lang.uz/);
 
-Currently, functions, objects, strings, int, dynamic arrays, conditions
-are supported
-
-
-Stay tuned :)
-
-
-```js 
-// syntax spoiler :)
-xullas a = 5;
-jovob b endi 10;
-
-korsat(a+b);
-```
+I will write about it in several days/weeks. 
+For now, try Kocha Lan :)
