@@ -9,4 +9,4 @@ repoURL: "https://github.com/kocha-lang/kocha"
 ## Check [website](https://kocha-lang.uz/);
 
 I will write about it in several days/weeks. 
-For now, try Kocha Lan :)
+For now, try Kocha Lang :)
