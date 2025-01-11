@@ -8,5 +8,5 @@ repoURL: "https://github.com/kocha-lang/kocha"
 
 ## Check [website](https://kocha-lang.uz/);
 
-I will write about it in several days/weeks. 
-For now, try Kocha Lang :)
+Still lazy to write the story here. BUT I would :)
+Check this page in several months :)

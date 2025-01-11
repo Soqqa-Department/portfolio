@@ -23,12 +23,12 @@ pinned: true
 
 ### Web
 
-- **Framework**: [Vue.js](https://vuejs.org/)
+- **Framework**: [Vue.js](https://vuejs.org/), Nuxt
 - **UI components**: [Prime](https://primevue.org/), Shadncn
 - **CSS**: TailwindCSS
 - **Bundling**: Vite
 - **Testing**: Vitest, Jest
-- **Backend**: [Deno](https://deno.com/), [Actix](https://actix.rs/)
+- **Backend**: [Node](https://nodejs.org), [Deno](https://deno.com/), [Actix](https://actix.rs/)
 - **Telegram Bot**: [Aiogram](https://aiogram.dev/)
 
 ---
@@ -53,5 +53,4 @@ pinned: true
 ---
 
 This is a living document, and I’m always exploring new technologies to
-improve my workflow and stay up to date with the industry. 
-> Would be cool to try Go for the backend.
+improve my workflow and stay up to date with the industry.
