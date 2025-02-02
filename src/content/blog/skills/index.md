@@ -24,7 +24,7 @@ pinned: true
 ### Web
 
 - **Framework**: [Vue.js](https://vuejs.org/), Nuxt
-- **UI components**: [Prime](https://primevue.org/), Shadncn
+- **UI components**: [Prime](https://primevue.org/), Shadncn, Vuetify
 - **CSS**: TailwindCSS
 - **Bundling**: Vite
 - **Testing**: Vitest, Jest
@@ -36,7 +36,7 @@ pinned: true
 ### Dev tools
 
 - **Documentation**: Swagger, Postman
-- **Version control**: Git, Github
+- **Version control**: Git, Github, Gitlab
 - **Containerization**: Docker Compose
 - **Hosting**: VPS/VDS, AWS
 - **Logging**: ElasticSearch

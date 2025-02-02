@@ -1,7 +1,19 @@
 ---
 const { quote, author } = Astro.props;
+
+function giveRandom(min: number, max: number){
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+const random = giveRandom(-1, 2);
 ---
-<div class="border-l-4 border-gray-500 p-4 my-6">
+<div 
+  class:list={{
+    "border rounded-xl border-gray-300 dark:border-gray-800 p-4 my-6": true,
+    [`rotate-${random}`]: random > 0,
+    [`-rotate${random}`]: random < 0
+  }}
+>
   <p class="text-base lg:text-lg italic">"{quote}"</p>
   {author && <p class="mt-2 text-sm font-bold text-right">~ {author}</p>}
 </div>
