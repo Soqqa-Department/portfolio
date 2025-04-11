@@ -7,9 +7,10 @@ function giveRandom(min: number, max: number){
 
 const random = giveRandom(-1, 2);
 ---
-<div 
+<div
+  class="hover:scale-101 hover:-rotate-1 transition "
   class:list={{
-    "border rounded-xl border-gray-300 dark:border-gray-800 p-4 my-6": true,
+    "border rounded-lg border-gray-300 dark:border-gray-800 p-4 my-6": true,
     [`rotate-${random}`]: random > 0,
     [`-rotate${random}`]: random < 0
   }}
