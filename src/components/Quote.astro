@@ -2,19 +2,86 @@
 const { quote, author } = Astro.props;
 
 function giveRandom(min: number, max: number){
-  return Math.floor(Math.random() * (max - min) + min);
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-const random = giveRandom(-1, 2);
+const tilt = giveRandom(-2, 2);
 ---
 <div
-  class="hover:scale-101 hover:-rotate-1 transition "
-  class:list={{
-    "border rounded-lg border-gray-300 dark:border-gray-800 p-4 my-6": true,
-    [`rotate-${random}`]: random > 0,
-    [`-rotate${random}`]: random < 0
+  class="quote-card shadow-xl border border-gray-300/40 dark:border-gray-100/20"
+  style={{
+    transform: `rotate(${tilt}deg)`,
+    backgroundColor: "var(--quote-bg)"
   }}
 >
-  <p class="text-base lg:text-lg italic">"{quote}"</p>
-  {author && <p class="mt-2 text-sm font-bold text-right">~ {author}</p>}
+  <style>
+    :global(:root) {{
+      --quote-bg: rgba(255,255,255,0.9);
+    }}
+    :global(.dark) {{
+      --quote-bg: rgba(0,0,0,0.65);
+    }}
+  </style>
+
+  <div class="quote-bg"></div>
+
+  <span class="absolute -top-8 left-4 big-quote text-gray-400 dark:text-gray-200">“</span>
+  <span class="absolute -bottom-16 right-4 big-quote text-gray-400 dark:text-white">”</span>
+
+  <p class="text-xl lg:text-2xl italic leading-relaxed text-gray-900 dark:text-gray-200/80 relative z-10">
+    {quote}
+  </p>
+
+  {author && (
+    <p class="mt-6 text-sm font-bold tracking-wide text-gray-600 dark:text-gray-200/50 text-right relative z-10">
+      ~ {author}
+    </p>
+  )}
 </div>
+
+
+<style>
+  /* Card base */
+  .quote-card {
+    position: relative;
+    border-radius: 1.25rem;
+    padding: 2rem;
+    transition: transform 400ms ease;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .quote-card:hover {
+    transform: rotate(0deg) scale(1.02);
+  }
+
+  /* Animated glow background (dark mode only) */
+  .quote-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, transparent 70%);
+    z-index: 0;
+  }
+  .dark .quote-bg {
+    background: radial-gradient(circle at center, rgba(0,255,179,0.12) 0%, transparent 70%);
+    animation: pulseGlow 6s ease-in-out infinite alternate;
+  }
+  @keyframes pulseGlow {
+    0% { opacity: 0.4; transform: scale(1); }
+    100% { opacity: 0.7; transform: scale(1.05); }
+  }
+
+  .big-quote {
+    font-size: 5rem;
+    font-family: ui-serif, Georgia, serif;
+    opacity: 0.4;
+    transition: transform 600ms ease, opacity 600ms ease;
+    z-index: 0;
+  }
+  /* .quote-card:hover .big-quote:first-of-type {
+    transform: translate(-5px, -5px) rotate(-3deg) scale(1.05);
+  }
+  .quote-card:hover .big-quote:last-of-type {
+    transform: translate(5px, 5px) rotate(3deg) scale(1.05);
+  } */
+</style>

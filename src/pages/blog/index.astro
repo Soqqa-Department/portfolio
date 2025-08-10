@@ -9,7 +9,7 @@ const data = (await getCollection("blog"))
   .filter(post => !(post.data.hide || post.data.draft))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-const pinned = data.filter(x=>x.data.pinned);
+// const pinned = data.filter(x=>x.data.pinned);
 
 type Acc = {
   [year: string]: CollectionEntry<"blog">[];
@@ -35,7 +35,7 @@ const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
       </div>
 
       <!-- Pinned posts -->
-      <section class="animate space-y-4">
+      <!-- <section class="animate space-y-4">
         <div class="font-semibold text-black dark:text-white">
           Pinned
         </div>
@@ -50,7 +50,7 @@ const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
             }
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- All posts -->
       <div class="space-y-4">
