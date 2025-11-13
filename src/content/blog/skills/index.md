@@ -1,8 +1,9 @@
 ---
 title: "Skills and technologies"
 description: "Explore my full tech stack 🔬"
-date: "Oct 08 2024"
-pinned: true
+date: "November 1 2025"
+pinned: false
+draft: true
 ---
 
 ### Languages
@@ -24,12 +25,12 @@ pinned: true
 ### Web
 
 - **Framework**: [Vue.js](https://vuejs.org/), Nuxt
-- **UI components**: [Prime](https://primevue.org/), Shadncn, Vuetify
-- **CSS**: TailwindCSS
+- **UI components**: [Prime](https://primevue.org/), Shadncn, Vuetify, AntDesign
+- **CSS**: SCSS, Tailwind
 - **Bundling**: Vite
 - **Testing**: Vitest, Jest
-- **Backend**: [Node](https://nodejs.org), [Deno](https://deno.com/), [Actix](https://actix.rs/)
-- **Telegram Bot**: [Aiogram](https://aiogram.dev/)
+- **Backend**: [Node](https://nodejs.org), [Deno](https://deno.com/)
+- **Telegram Bot**: [Aiogram](https://aiogram.dev/), [Grammy](https://grammy.dev/)
 
 ---
 
@@ -47,7 +48,7 @@ pinned: true
 
 - **Prototyping**: Figma, Photoshop, [Excalidraw](https://excalidraw.com/)
 - **Organizing**: Notion
-- **Team**: Slack
+- **Team**: Slack, Jira
 - **Media**: Blender, Adobe Premiere Pro
 
 ---

@@ -3,6 +3,7 @@ import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
 import Link from "@components/Link.astro";
 import { SITE, HOME, SOCIALS } from "@consts";
+import LinkCard from "@components/LinkCard.astro";
 ---
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
@@ -17,58 +18,15 @@ import { SITE, HOME, SOCIALS } from "@consts";
             I'm a Software Engineer based in Tashkent.
           </p>
           <p class="animate">
-            My work is centered around 
-            <Link
-              href="https://vuejs.org/"
-              aria-label="Vue.js website link"
-              external
-            >
-            Vue.js
-            </Link>
-            for intuitive front-end
-            experiences and 
-            <Link 
-              href="https://deno.com/"
-              aria-label="Deno website link"
-              external
-            >
-              Deno
-            </Link>
-            /
-            <Link
-              href="https://nodejs.org/en"
-              aria-label="Node website link"
-              external
-            >
-              Node
-            </Link>
-            for reliable back-end services.
-            I also have experience with Python and have dabbled in 
-            C++ and Rust, which deepened my understanding of performance
-            and systems programming.
-          </p>
-          <p class="animate">
-            I’m fascinated by the underlying mechanics of computer science
-            and love diving deep into how things work—whether it's low-level
-            code execution, network operations, or system architecture.
-            This curiosity drives me to continuously learn and improve,
-            applying that knowledge to build better, more scalable
-            and maintainable solutions.
-          </p>
-          <p class="animate">
-            Outside of coding, I enjoy composing music and editing videos,
-            constantly finding new ways to blend creativity with technology.
-            I’m always up for interesting challenges. 
-            So, let’s build something
-            <a href="https://github.com/floss-uz/awesome"><b>awesome</b></a> 
-            together!
+            I make user interfaces using Vue.js for living. I love computers and genius ideas behind them.
+            Have experience in writing on several programming languages. Currently, playing with C++ and microcontrollers.
           </p>
         </article>
       </section>
 
       <section class="animate space-y-4">
         <h5 class="font-semibold text-black dark:text-white text-xl">
-          Let's Talk
+          Contacts
         </h5>
         <article>
           <p>
@@ -91,6 +49,24 @@ import { SITE, HOME, SOCIALS } from "@consts";
             </Link>
           </li>
         </ul>
+      </section>
+
+      <section class="animate flex flex-wrap md:flex-nowrap justify-between items-stretch gap-2">
+        <LinkCard
+          title="Work"
+          description="My work timeline."
+          href="/work"
+        />
+        <LinkCard
+          title="Blog"
+          description="My thoughts."
+          href="/blog"
+        />
+        <LinkCard
+          title="Projects"
+          description="What I'm building"
+          href="/projects"
+        />
       </section>
     </div>
   </Container>

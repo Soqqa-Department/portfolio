@@ -12,3 +12,4 @@ At Ipak Yuli Bank, I contribute to both legacy and modern web projects, primaril
 - Lead code reviews, mentor new hires, and conduct technical interviews. 
 - Implemented WebSocket-based services for real-time notifications and client-side analytics, improving user experience and enabling better system monitoring.
 - Improved code quality by integrating ESLint with a custom ruleset.
+- Reduced error rate by integrating unit and integration tests to the CI/CD pipelines using Vitest.

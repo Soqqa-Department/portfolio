@@ -4,6 +4,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import { PROJECTS } from "@consts";
+import LinkCard from "@components/LinkCard.astro";
 
 const projects = (await getCollection("projects"))
   .filter(project => !project.data.draft)
@@ -16,7 +17,17 @@ const projects = (await getCollection("projects"))
       <div class="animate font-semibold text-black dark:text-white text-4xl">
         Projects
       </div>
+
       <ul class="animate flex flex-col gap-4">
+        <li>
+          <LinkCard
+            title="Awesome"
+            description="The collection of awesome uzbek open source projects 🕶"
+            href="https://github.com/floss-uz/awesome/"
+            external={true}
+          />
+        </li>
+
         {
           projects.map((project) => (
             <li>
