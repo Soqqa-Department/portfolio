@@ -7,9 +7,11 @@ draft: false
 ---
 
 At Ipak Yuli Bank, I contribute to both legacy and modern web projects, primarily using the Vue.js ecosystem.
+- Worked on several cross-team projects.
 - Migrated Vue 2.6 project to Vue 2.7 and from Vue CLI to Vite, cutting CI/CD build times by 50% and reducing dependencies by ~100 MB. 
-- Build new Vue 3 projects with Pinia and a custom UI library.
+- Built a custom UI library.
 - Lead code reviews, mentor new hires, and conduct technical interviews. 
 - Implemented WebSocket-based services for real-time notifications and client-side analytics, improving user experience and enabling better system monitoring.
 - Improved code quality by integrating ESLint with a custom ruleset.
 - Reduced error rate by integrating unit and integration tests to the CI/CD pipelines using Vitest.
+- Introduced scheduled nightly releases using Gitlab's functionality.
